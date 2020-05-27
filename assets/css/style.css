@@ -1,0 +1,52 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Archivo Narrow';
+    background-color: #cdda8a;
+}
+
+/*header*/
+header{
+    background-image: url('../images/tulip\ background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    text-align: right;
+    display:flex;
+    justify-content: flex-end;
+}
+header div{
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right:2%;
+}
+h1 {
+    font-family: 'Julius Sans One';
+    font-size: 5rem;
+  
+}
+
+/*Navigation*/
+nav ul{
+    display:flex;
+    justify-content: flex-end;
+
+    
+}
+nav ul li{
+    display:inline;
+    margin:5px 20px;
+    font-size: 2rem;
+    font-family: 'Julius Sans One';
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fcc5db
+}
