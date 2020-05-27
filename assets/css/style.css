@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 body{
     font-family: 'Archivo Narrow';
@@ -20,7 +21,6 @@ header{
     justify-content: flex-end;
 }
 header div{
-    width:40%;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -48,5 +48,26 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color:#fcc5db
+    color:#d15182;
 }
+
+.section-title{
+    width:20%;
+    text-align: right;
+    border-right: 1px solid black;
+    font-size: 3rem;
+    margin:5px 10px;
+    font-weight: lighter;
+}
+
+.section-content{
+    width:70%;
+    margin: auto 0;
+}
+/*flex rows*/
+.flex-row{
+    display:flex;
+    justify-content: flex-start;
+    margin:50px 15px;
+}
+
