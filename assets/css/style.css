@@ -51,18 +51,34 @@ nav ul li a{
     color:#d15182;
 }
 
+
 .section-title{
     width:20%;
     text-align: right;
     border-right: 1px solid black;
-    font-size: 3rem;
     margin:5px 10px;
-    font-weight: lighter;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.section-title h2{
+    font-weight: lighter;
+    font-size: 3rem;
+    padding:5px;
+  
+  
+}
+
+
 
 .section-content{
     width:70%;
     margin: auto 0;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+
 }
 /*flex rows*/
 .flex-row{
@@ -71,3 +87,11 @@ nav ul li a{
     margin:50px 15px;
 }
 
+/*About Section*/
+.profile-image{
+    max-width:20%;
+    margin:15px;
+}
+img{
+    max-width: 100%;
+}
