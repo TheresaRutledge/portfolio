@@ -8,6 +8,8 @@ Share a little bit about myself and the work I have done
 *CSS
 
 ## Website
+https://theresarutledge.github.io/portfolio/
 
 
 ## Screenshot
+![](./assets/images/screenshot.png)
