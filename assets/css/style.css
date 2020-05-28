@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Archivo Narrow';
-    background-color: #cdda8a;
+    background-color: rgba(205,218,138,0.8);
 }
 
 /*header*/
@@ -19,6 +19,7 @@ header{
     text-align: right;
     display:flex;
     justify-content: flex-end;
+    opacity:0.9;
 }
 header div{
     display:flex;
@@ -56,13 +57,16 @@ nav ul li a{
 
 
 .section-title{
-    width:20%;
+    width:10%;
     text-align: right;
-    border-right: 1px solid black;
+    border-left: 1px solid black;
     margin:5px 10px;
     display:flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
 }
 
 .section-title h2{
@@ -95,9 +99,11 @@ nav ul li a{
 .profile-image{
     max-width:20%;
     margin:15px;
+   
 }
 img{
     max-width: 100%;
+    border-radius: 15px;;
 }
 
 /*Projects*/
@@ -111,6 +117,7 @@ img{
     justify-content: center;
     margin:5px;
     background-color: #fefefe;
+    border-radius: 15px;
 }
 .project a{
     color:#d15182;
@@ -125,4 +132,18 @@ img{
     background-repeat: no-repeat;
     flex-grow:4;
     flex-basis:500px;
+}
+
+/*Contact*/
+.contact-info{
+    justify-content: space-around;
+    
+}
+#contact a{
+    text-decoration: none;
+    border-bottom: 1.5px solid #d15182;
+    font-size:1.8rem;
+    color: #d15182;
+    margin: auto 20px;
+    
 }
