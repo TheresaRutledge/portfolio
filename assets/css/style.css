@@ -11,7 +11,7 @@ body{
 
 /*header*/
 header{
-    background-image: url('../images/tulip\ background.jpg');
+    background-image: url('../images/tulipbackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -70,14 +70,12 @@ nav ul li a{
   
 }
 
-
-
 .section-content{
     width:70%;
-    margin: auto 0;
     display:flex;
     justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 /*flex rows*/
@@ -88,10 +86,37 @@ nav ul li a{
 }
 
 /*About Section*/
+#about-me p{
+    width:75%;
+}
 .profile-image{
     max-width:20%;
     margin:15px;
 }
 img{
     max-width: 100%;
+}
+
+/*Projects*/
+
+.project{
+    min-width:30%;
+    height:200px;
+    display: inline-flex;
+    flex-grow:1;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+    color:#d15182;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: #fefefe;
+}
+.run-buddy{
+    background-image: url('../images/runbuddy.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow:4;
+    flex-basis:500px;
 }
