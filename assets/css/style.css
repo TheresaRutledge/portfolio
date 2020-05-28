@@ -42,13 +42,16 @@ nav ul{
 nav ul li{
     display:inline;
     margin:5px 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Julius Sans One';
+    
 }
 
 nav ul li a{
     text-decoration: none;
     color:#d15182;
+    font-weight: bolder;
+    font-size:1.3rem;
 }
 
 
@@ -107,10 +110,13 @@ img{
     align-items: center;
     justify-content: center;
     margin:5px;
+    background-color: #fefefe;
+}
+.project a{
     color:#d15182;
     font-size: 2rem;
     font-weight: bolder;
-    background-color: #fefefe;
+    text-decoration: none;
 }
 .run-buddy{
     background-image: url('../images/runbuddy.jpg');
