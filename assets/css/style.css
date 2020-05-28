@@ -11,7 +11,7 @@ body{
 
 /*header*/
 header{
-    background-image: url('../images/tulipbackground.jpg');
+    background-image: url('../images/tulipbackground2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,13 +23,15 @@ header{
 }
 header div{
     display:flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
-    margin-right:2%;
+    
 }
 h1 {
     font-family: 'Julius Sans One';
     font-size: 5rem;
+    margin-right: 4%;
   
 }
 
@@ -43,8 +45,8 @@ nav ul{
 nav ul li{
     display:inline;
     margin:5px 20px;
-    font-size: 2.5rem;
     font-family: 'Julius Sans One';
+    margin-right: 4%;
     
 }
 
@@ -53,43 +55,43 @@ nav ul li a{
     color:#d15182;
     font-weight: bolder;
     font-size:1.3rem;
+    margin-right: 4%;
 }
 
+/*section styles*/
 
 .section-title{
     width:10%;
-    text-align: right;
     border-left: 1px solid black;
-    margin:5px 10px;
     display:flex;
     justify-content: center;
     align-items: flex-end;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: center;
+    margin-right:15px;
 }
 
 .section-title h2{
     font-weight: lighter;
     font-size: 3rem;
-    padding:5px;
+    
   
   
 }
 
 .section-content{
-    width:70%;
+    width:85%;
     display:flex;
-    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-
+    
 }
 /*flex rows*/
 .flex-row{
     display:flex;
     justify-content: flex-start;
-    margin:50px 15px;
+    margin:50px 0;
 }
 
 /*About Section*/
@@ -98,26 +100,27 @@ nav ul li a{
 }
 .profile-image{
     max-width:20%;
-    margin:15px;
+    margin-right:15px;
+    
    
 }
 img{
-    max-width: 100%;
-    border-radius: 15px;;
+    width: 100%;
+    border-radius: 15px;
 }
 
 /*Projects*/
 
 .project{
-    min-width:30%;
+    min-width:300px;
     height:200px;
     display: inline-flex;
     flex-grow:1;
     align-items: center;
     justify-content: center;
-    margin:5px;
     background-color: #fefefe;
     border-radius: 15px;
+    margin:10px 10px 10px 0;
 }
 .project a{
     color:#d15182;
@@ -130,20 +133,77 @@ img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-grow:4;
-    flex-basis:500px;
+    flex-basis:600px;
 }
 
 /*Contact*/
 .contact-info{
+    display:flex;
     justify-content: space-around;
-    
 }
 #contact a{
     text-decoration: none;
     border-bottom: 1.5px solid #d15182;
     font-size:1.8rem;
     color: #d15182;
-    margin: auto 20px;
-    
+      
+}
+/*small desktops and smaller*/
+@media screen and (max-width:980px){
+    header{
+        height:300px;
+    }
+    section{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .section-title{
+    width:100%;
+    writing-mode: initial;
+    transform:none;
+    border:none;
+    display:initial;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin:0 0 20px 0;
+    }
+    .section-title h2{
+    display:block;
+    }
+    .section-content{
+    width:100%;
+    }
+}
+/*tablets and smaller*/
+@media screen and (max-width:768px){
+}  
+  
+
+/*Mobile phones and smaller*/
+@media screen and (max-width:575px){
+.section-content{
+    flex-direction: column;
+}
+.section-title{
+    width:80%;
+    margin:10px auto;
+}
+h1{
+    font-size: 3rem;
+}
+.profile-image{
+    max-width:80%;
+    margin-bottom: 15px;
+}
+.project{
+    margin:15px 0;
+}
+#about-me p{
+    width:80%;
+}
+.run-buddy{
+    flex-basis:initial;
+}
+
 }
