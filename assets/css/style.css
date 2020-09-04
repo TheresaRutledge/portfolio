@@ -124,6 +124,7 @@ img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .grid-container a{
@@ -144,6 +145,14 @@ img{
 background-image: url('../images/wine-and-dine.jpg');
 grid-column:1/3;
 grid-row:1/3; 
+
+}
+
+.cosmo-tastes{
+background-color: #4056A1;
+background-image: url('../images/lamb.PNG');
+/* opacity: 0.7; */
+
 }
 
 /*Contact*/
